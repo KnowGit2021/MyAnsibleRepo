@@ -11,6 +11,6 @@
 
   - name: i want to start apache service
     service:
-      name: apache2
+      name: "{{mypackageonubuntu}}"
       state: started
     when: ansible_os_family=="Debian" 
