@@ -1,0 +1,14 @@
+---
+- hosts: mywebservers
+  tasks: 
+  - name: install java on debian nodes
+    apt:
+      name: "{{myjavapackageondebian}}"
+      state: present
+    when: ansible_os_family=="Debian"
+
+  - name: install java on amazon nodes
+    dnf:
+      name: "{{myjavapackageonRedHat}}"
+      state: present
+    when: ansible_os_family=="RedHat"    
