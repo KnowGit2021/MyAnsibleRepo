@@ -1,4 +1,4 @@
 ---
 mypackageonubuntu: apache2
-myjavapackageondebian: openjdk-11-jdk
+myjavapackageondebian: openjdk-17-jdk-headless
 myjavapackageonRedHat: sudo java-1.8.0-amazon-corretto
